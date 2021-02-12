@@ -15,8 +15,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class RaceCar {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
-    @GenericGenerator(name = "native",strategy = "native")
+    @GeneratedValue
     private Long id;
     private String nickname;
     private String model;
